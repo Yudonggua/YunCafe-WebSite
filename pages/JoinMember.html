@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <table style="border:3px #705e59 dashed;" cellpadding="10" border='1'>
+        <tr>
+            <th>身分別</th>
+            <th>一學期</th>
+            <th>一學年</th>
+        </tr>
+        <tr>
+            <td>舊社員</td>
+            <td>500</td>
+            <td>900</td>
+        </tr>
+        <tr>
+            <td>新社員</td>
+            <td>550</td>
+            <td>1000</td>
+        </tr>
+    </table>
+    <hr />
+    <form action="/action_page.php">
+        <label for="Sclass">系級</label>
+        <input type="text" id="Sclass" name="Sclass"><br><br>
+        <label for="Snum">學號</label>
+        <input type="text" id="Snum" name="Snum"><br><br>
+        <label for="Snum">姓名</label>
+        <input type="text" id="Sname" name="Sname"><br><br>
+
+        生理性別:
+        <input type="radio" name="radGender" value='1' />男
+        <input type="radio" name="radGender" value='0' />女
+        <hr />
+        <!--判斷是否為舊社員-->
+
+        <label for="fname">加入社員方案</label>
+        <select name="方案" id="方案">
+            <option value="一學期">一學期</option>
+            <option value="一學年">一學年</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
